@@ -37,8 +37,18 @@
         </tr>
         <tr>
             <td>Hobi</td>
-            <td><?php echo $hobi1 . " " . $hobi2 . " " . $hobi3; ?>
             <td>
+                <?php
+                if (isset($hobi1)) {
+                    echo $hobi1 . " ";
+                }
+                if (isset($hobi2)) {
+                    echo $hobi2 . " ";
+                }
+                if (isset($hobi3)) {
+                    echo $hobi3 . " ";
+                }
+                ?>
             </td>
         </tr>
 
